@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Bankai';
+  src: url('../src/assets/fonts/BankaiDemoVersion-lglxd.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Bankai', sans-serif;
+}

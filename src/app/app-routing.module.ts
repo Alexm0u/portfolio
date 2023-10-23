@@ -6,12 +6,14 @@ import { ProyectosPageComponent } from './pages/proyectos-page/proyectos-page.co
 import { ContactoPageComponent } from './pages/contacto-page/contacto-page.component';
 
 const routes: Routes = [
-  {path: '', component: HomePageComponent},
-  {path: 'sobre-mi', component: SobreMiPageComponent},
-  {path: 'proyectos', component: ProyectosPageComponent},
-  {path: 'contacto', component: ContactoPageComponent},
-  {path: '**', component: HomePageComponent}
+  { path: '', pathMatch: 'full', redirectTo: 'home' }, 
+  { path: 'home', component: HomePageComponent }, 
+  { path: 'sobre-mi', component: SobreMiPageComponent },
+  { path: 'proyectos', component: ProyectosPageComponent }, 
+  { path: 'contacto', component: ContactoPageComponent }, 
+  { path: '**', redirectTo: 'home' } 
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

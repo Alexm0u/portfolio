@@ -1,18 +1,33 @@
+
 .container-fluid{
     background-color: black;
     width: 100%;
-    padding: 20px 10%;
-}
+    padding: 20px 10%;}
 #navbarNav{
     justify-content: right;
+    font-family: 'Bankai', sans-serif;
 }
 .nav-item{
-    justify-content: space-between;
+    margin-right: 20px;
 }
 .nav-link{
-    color: pink;
+    color: #f1a8db;
+    padding: 10px;
+    font-size: 25px;
+    margin-left: 35px;
+    transition: .3s;
 }
+.nav-link:hover{
+    color: #fa03b0;
+}
+.nav-link.active {
+    color: #fa03b0;
+  }
+  
 /* LOGO DEL NAVBAR */
 img{
     width: 15%;
 }
+
+    
+    
