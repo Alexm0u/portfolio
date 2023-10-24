@@ -10,7 +10,10 @@
     margin-left: -12%;
 }
 h1{
-    font-weight: 1000;
+    font-weight: 900;
+    display: block;
+    font-size: 5em;
+    color: #3d535f;
 }
 .cols{
     width: 50%; 
@@ -18,4 +21,44 @@ h1{
 .topline{
     display: block;
     position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;color: #3d535f;
+}
+.topline::after{    
+    position: absolute;
+    content:'';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: violet;
+}
+.nombre{
+    color: violet;
+    text-transform: capitalize;
+}
+p{
+    display: block;
+    width: 90%;
+    font-size: 1.2em;
+    color: #3d535f;
+}
+button{
+    position: relative;
+    left: 25%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #3d535f;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+    transition: 0.9s ease;
+}
+button:hover{
+    background-color: violet;
 }
