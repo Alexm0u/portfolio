@@ -1,33 +1,51 @@
+.navbar {
+  font-family: "poppins", sans-serif;
+  display: flex;
+}
 
-.container-fluid{
-    background-color: black;
-    width: 100%;
-    padding: 20px 10%;}
-#navbarNav{
-    justify-content: right;
-    font-family: 'Bankai', sans-serif;
+.navbar-btn-custom {
+  display: flex;
+  margin-left: auto;
+  margin-right: 70px;
 }
 .nav-item{
-    margin-right: 20px;
+    margin: 0 15px;
 }
 .nav-link{
-    color: #f1a8db;
-    padding: 10px;
-    font-size: 25px;
-    margin-left: 35px;
-    transition: .3s;
+    font-size: 20px;
+    color: #3d535f;
+    letter-spacing: 3px;
+    text-transform: capitalize;
 }
-.nav-link:hover{
-    color: #fa03b0;
-}
-.nav-link.active {
-    color: #fa03b0;
-  }
-  
-/* LOGO DEL NAVBAR */
-img{
-    width: 15%;
+.nav-link:hover, .links a:hover{
+    color: violet;
 }
 
-    
-    
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.links a {
+  margin-right: 35px;
+  margin: 25px 10px;
+  font-size: 30px;
+  color: #3d535f;
+}
+
+.container-fluid {
+  margin-right: 10%;
+}
+.navbar-brand{
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: #3d535f;
+    letter-spacing: 3px;
+    cursor: pointer;
+    margin-left: 20%;
+}
+b{
+    font-size: 45px;
+    color: violet;
+}
