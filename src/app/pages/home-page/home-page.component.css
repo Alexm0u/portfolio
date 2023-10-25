@@ -1,77 +1,102 @@
-.wrapper{
-display: flex;
-width: 100%;
-height: 100%;
-align-items: center;
-padding: 0 10%;
-overflow: hidden;
-    font-family: "poppins", sans-serif;
-
+.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 0 10%;
+  overflow: hidden;
+  font-family: "poppins", sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 88vh; 
+  position: relative;
 }
-h1{
-    font-weight: 900;
-    display: block;
-    font-size: 5em;
-    color: #3d535f;
+h1 {
+  font-weight: 900;
+  display: block;
+  font-size: 5em;
+  color: #3d535f;
 }
-.cols{
-    width: 50%;
-    margin-top: 15%;
-    margin-left: -1%;
+.cols {
+  width: 50%;
+  margin-top: 5%;
+  margin-left: -1%;
 }
-.topline{
-    display: block;
+.topline {
+  display: block;
+  position: relative;
+  font-size: 35px;
+  letter-spacing: 5px;
+  color: #3d535f;
+}
+.topline::after {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 45px;
+  bottom: 10px;
+  background-color: darkmagenta;
+}
+.nombre {
+  color:darkmagenta;
+  text-transform: capitalize;
+}
+p {
+  display: block;
+  width: 90%;
+  font-size: 1.2em;
+  color: #3d535f;
+}
+button {
+  position: relative;
+  left: 20%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 400;
+  color: #fff;
+  background-color: #3d535f;
+  border-radius: 20px;
+  padding: 8px 14px;
+  margin: 40px 5px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+  transition: 0.9s ease;
+}
+button:hover {
+  background-color: darkmagenta;
+}
+.imgbox {
     position: relative;
-    font-size: 35px;
-    letter-spacing: 5px;color: #3d535f;
+    border-radius: 50%;
+    overflow: hidden; 
+    width: fit-content; 
+  }
+  .imgbox img {
+    display: block;
+    height: auto; 
+    width: 100%; 
+  }
+@keyframes animate {
+  50% {
+    top: 49%;
+    left: 51%;
+    width: 125%;
+  }
 }
-.topline::after{    
+.imgbox #splash{
     position: absolute;
-    content:'';
-    height: 4px;
-    width: 45px;
-    bottom: 10px;
-    background-color: violet;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-35 deg);
+    width: 130%;
+    filter: saturate(200%);
+    animation: animate 4s linear infinite;
 }
-.nombre{
-    color: violet;
-    text-transform: capitalize;
-}
-p{
-    display: block;
-    width: 90%;
-    font-size: 1.2em;
-    color: #3d535f;
-}
-button{
-    position: relative;
-    left: 20%;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    font-size: 25px;
-    font-weight: 400;
-    color: #fff;
-    background-color: #3d535f;
-    padding: 8px 14px;
-    margin: 40px 5px;
-    letter-spacing: 2px;
-    text-transform: capitalize;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
-    transition: 0.9s ease;
-}
-button:hover{
-    background-color: violet;
-}
-.imgbox{
-    position: relative;
-    width: 100%;
-    height:100%;
-}
-.imgbox img{
-    position: relative;
-    height: 100%;
-    width: calc(130% - 80px);
-    top: -100px;
-    right: 50px;
+.cols1{
+    width: 40%;
+    margin-bottom: 20px;
 }

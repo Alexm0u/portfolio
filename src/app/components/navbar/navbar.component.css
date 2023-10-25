@@ -1,6 +1,8 @@
 .navbar {
   font-family: "poppins", sans-serif;
   display: flex;
+  background-image: url(../../../assets/img/navbar1.jpg);
+  
 }
 
 .navbar-btn-custom {
@@ -15,6 +17,8 @@
     font-size: 20px;
     letter-spacing: 3px;
     text-transform: capitalize;
+    transition: 0.5s ease;
+    color: whitesmoke;
 }
 .nav-link:hover, .links a:hover{
     color: violet;
@@ -29,7 +33,7 @@
   margin-right: 35px;
   margin: 25px 10px;
   font-size: 30px;
-  color: #3d535f;
+  color: whitesmoke;
 }
 
 .container-fluid {
@@ -39,7 +43,7 @@
     display: flex;
     font-size: 40px;
     font-weight: 800;
-    color: #3d535f;
+    color:whitesmoke;
     letter-spacing: 3px;
     cursor: pointer;
     margin-left: 10%;
@@ -48,3 +52,8 @@ b{
     font-size: 45px;
     color: violet;
 }
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+
