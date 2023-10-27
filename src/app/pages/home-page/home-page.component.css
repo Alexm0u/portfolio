@@ -13,11 +13,23 @@
   position: relative;
 }
 
-h1 {
+.topline {
   font-weight: 900;
-  display: block;
-  font-size: 3em; 
-  color: darkorchid;
+  display: inline-block; 
+  position: relative; 
+  font-size: 80px; 
+  letter-spacing: 5px;
+  color: #fff;
+}
+
+.topline::after {
+  content: '';
+  height: 4px;
+  width: 300px;
+  background-color: rgb(108, 150, 240);
+  position: relative; 
+  display: block; 
+  margin-top: 10px; 
 }
 
 .cols {
@@ -33,15 +45,17 @@ h2 {
 
 p {
   width: 90%;
-  color: #fff;
+  color:#fff;
   font-size: 1.2em;
   line-height: 1.6em;
   margin-top: 20px;
+  letter-spacing: 1px;
 }
 
 a {
   color: #fff;
   text-decoration: none;
+  color:  rgb(108, 150, 240);
   transition: color 0.5s ease;
 }
 
@@ -51,14 +65,13 @@ a:hover {
 
 button {
   position: relative;
-  left: 15%;
   outline: none;
   border: none;
   cursor: pointer;
   font-size: 20px; 
   font-weight: 400;
   color: #fff;
-  background-color: #3f3e3f;
+  background-color:  rgb(108, 150, 240);
   border-radius: 20px;
   padding: 8px 14px;
   margin: 20px 5px; 
