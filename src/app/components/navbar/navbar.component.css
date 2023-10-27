@@ -1,49 +1,50 @@
 .navbar {
-  font-family: "poppins", sans-serif;
+  font-family: "Bankai", sans-serif;
   display: flex;
-  background-image: url(../../../assets/img/navbar1.jpg);
-  
+  background: none;
 }
 
 .navbar-btn-custom {
   display: flex;
   margin-left: auto;
-  margin-right: 70px;
 }
 .nav-item{
-    margin: 0 15px;
+    margin: 0 10px;
 }
 .nav-link{
-    font-size: 20px;
-    letter-spacing: 3px;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 5px;
     text-transform: capitalize;
-    transition: 0.5s ease;
-    color: whitesmoke;
+    transition: 1s ease;
+    color:grey;
+    margin-right: 25px;
 }
 .nav-link:hover, .links a:hover{
-    color: violet;
+    color:darkorchid;
 }
 
 .links {
   display: flex;
   align-items: center;
+  
 }
 
 .links a {
-  margin-right: 35px;
   margin: 25px 10px;
   font-size: 30px;
-  color: whitesmoke;
+  color:grey;
+  transition: 1s ease;
 }
 
 .container-fluid {
-  margin-right: 10%;
+  margin-right: 5%;
 }
 .navbar-brand{
     display: flex;
     font-size: 40px;
     font-weight: 800;
-    color:whitesmoke;
+    color:rgb(245, 245, 245);
     letter-spacing: 3px;
     cursor: pointer;
     margin-left: 10%;
