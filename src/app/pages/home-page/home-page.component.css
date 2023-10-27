@@ -1,26 +1,123 @@
-.topline {
-  display: block;
-  position: relative;
-  font-size: 35px;
-  letter-spacing: 5px;
-  color: #3d535f;
-}
-.topline::after {
-  position: absolute;
-  content: "";
-  height: 4px;
-  width: 45px;
-  bottom: 10px;
-  background-color: darkmagenta;
-}
-.home {
-  font-family: "Bankai", sans-serif;
+.wrapper {
+  display: flex;
   width: 100%;
+  align-items: center;
+  padding: 0 10%;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
   height: 88vh;
+  position: relative;
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+h1 {
+  font-weight: 900;
+  display: block;
+  font-size: 3em; 
+  color: darkorchid;
 }
+
+.cols {
+  width: 100%; 
+  margin-top: 5%;
+}
+
+h2 {
+  display: block;
+  width: 90%;
+  color: #fff;
+}
+
+p {
+  width: 90%;
+  color: #fff;
+  font-size: 1.2em;
+  line-height: 1.6em;
+  margin-top: 20px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+a:hover {
+  color: darkmagenta;
+}
+
+button {
+  position: relative;
+  left: 15%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px; 
+  font-weight: 400;
+  color: #fff;
+  background-color: #3f3e3f;
+  border-radius: 20px;
+  padding: 8px 14px;
+  margin: 20px 5px; 
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+  transition: 0.9s ease;
+}
+
+button:hover {
+  background-color: darkmagenta;
+}
+
+.imgbox {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  width: fit-content;
+  border: 3px solid #ebbbeb; 
+  box-sizing: content-box;
+}
+
+
+.imgbox img {
+  display: block;
+  height: auto;
+  width: 100%;
+  position: relative;
+  border-radius: 50%;
+  border: 5px solid;
+  border-image: linear-gradient(to right, darkmagenta, violet) 1;
+  
+}
+
+.cols1 {
+  width: 100%; 
+  margin-bottom: 20px;
+}
+
+
+/* Media query para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+
+  button {
+    left: -10px;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.5s ease;
+  }
+  
+  a:hover {
+    color: darkmagenta;
+  }
+}
+
+

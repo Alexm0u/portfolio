@@ -1,5 +1,5 @@
 .navbar {
-  font-family: "Bankai", sans-serif;
+  font-family: "Poppins", sans-serif;
   display: flex;
   background: none;
 }
@@ -12,16 +12,15 @@
     margin: 0 10px;
 }
 .nav-link{
-    font-size: 30px;
-    font-weight: 400;
+    font-size: 20px;
     letter-spacing: 5px;
     text-transform: capitalize;
     transition: 1s ease;
-    color:grey;
+    color:#FFF;
     margin-right: 25px;
 }
 .nav-link:hover, .links a:hover{
-    color:darkorchid;
+    color:rgb(196, 119, 235);
 }
 
 .links {
@@ -33,7 +32,7 @@
 .links a {
   margin: 25px 10px;
   font-size: 30px;
-  color:grey;
+  color:#FFF;
   transition: 1s ease;
 }
 
@@ -44,14 +43,14 @@
     display: flex;
     font-size: 40px;
     font-weight: 800;
-    color:rgb(245, 245, 245);
+    color:#fff;
     letter-spacing: 3px;
     cursor: pointer;
     margin-left: 10%;
 }
 b{
     font-size: 45px;
-    color: violet;
+    color:rgb(196, 119, 235);
 }
 .navbar-toggler-icon {
   filter: invert(1);

@@ -1,11 +1,25 @@
-@font-face {
-  font-family: 'Bankai';
-  src: url('assets/fonts/Bankai.ttf') format('truetype');
-}
-body{
-  background-image: url(assets/img/bk-home-4.jpg);
-  background-size: cover;
-  background-position: center;
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("assets/img/galaxy.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+  animation: zoomBackground 60s infinite;
+  animation-fill-mode: forwards;
 }
 
+@keyframes zoomBackground {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
