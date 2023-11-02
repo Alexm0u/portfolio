@@ -4,18 +4,13 @@
   padding: 20px;
   color: white;
   margin-left: 10px;
+  font-size: 25px;
 }
-
-.text-center {
-  text-align: center;
-}
-
 .row {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -15px;
 }
-
 .col-sm-8,
 .col-sm-4,
 .col-sm {
@@ -26,6 +21,7 @@
 h1 {
   font-size: 2em;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 p {
   font-size: 1.1em;
@@ -42,17 +38,29 @@ li {
   margin-bottom: 10px;
 }
 
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
+button {
+  position: relative;
+  outline: none;
   border: none;
-  border-radius: 5px;
-  background-color: #007bff;
-  color: #fff;
-  font-size: 1.1em;
   cursor: pointer;
-  transition: background-color 0.3s;
+  font-size: 20px; 
+  font-weight: 400;
+  color: #fff;
+  background-color:  rgb(108, 150, 240);
+  border-radius: 20px;
+  padding: 8px 14px;
+  margin: 20px 5px; 
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+  transition: 0.9s ease;
+  justify-content: end;
+  margin-left: 28%;
 }
+button:hover {
+  background-color: darkmagenta;
+}
+
 i {
   font-size: 1.6em;
 }
@@ -79,3 +87,18 @@ i {
 .bx.bx-chevrons-down {
   float: right;
 }
+.bx.bx-chevrons-up {
+  float: right;
+}
+.contingut {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 1s, opacity 1s;
+}
+
+.contingut.show {
+  max-height: 1000px;
+  opacity: 1;
+}
+

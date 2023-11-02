@@ -1,7 +1,7 @@
 <div class="container">
-    <div>
-      <h1 (click)="toggleList('sobreMi')">Sobre mí<i class='bx bx-chevrons-down'></i></h1>
-      <div class="sobremi-contenido" *ngIf="sobreMiListState">
+    <div class="sobre-mi-contenido">
+      <h1 >Sobre mí</h1>
+      <div>
         <p>
             El tiempo que no estoy programando lo invierto mayormente en los tres básicos de mi estilo de vida:
           </p>
@@ -18,29 +18,31 @@
       
     </div>
     <div>
-      <h1 (click)="toggleList('contacto')">Contacto<i class='bx bx-chevrons-down'></i></h1>
-      <div class="contact-contenido" *ngIf="contactoListState">
-        <p>
+        <h1 (click)="toggleList('contacto')">Contacto<i class="bx" [ngClass]="contactoListState ? 'bx-chevrons-up' : 'bx-chevrons-down'"></i></h1>
+        <div class="contingut" [ngClass]="{'show': contactoListState}" [ngStyle]="{'max-height': contactoListState ? '1000px' : '0px', 'opacity': contactoListState ? 1 : 0}">
+          <p>
             No dudes en ponerte en contacto conmigo si estás interesado en mi trabajo o si tienes alguna pregunta. Estoy siempre abierto a nuevas oportunidades.
           </p>
-          <button class="btn btn-primary">Contactarme<i class='bx bx-chevrons-down'></i></button>
+          <button>Contactarme</button>
+        </div>
       </div>
       
+    <div>
+      <h1 (click)="toggleList('soft')">Soft Skills<i class="bx" [ngClass]="softListState ? 'bx-chevrons-up' : 'bx-chevrons-down'"></i></h1>
+      <div class="contingut" [ngClass]="{'show': softListState}" [ngStyle]="{'max-height': softListState ? '1000px' : '0px', 'opacity': softListState ? 1 : 0}">
+        <ul >
+            <li>Inteligencia emocional</li>
+            <li>Colaboración</li>
+            <li>Pensamiento crítico</li>
+            <li>Escucha activa</li>
+            <li>Resiliencia</li>
+            <li>Comunicación eficaz</li>
+          </ul>
+      </div>
     </div>
     <div>
-      <h1 (click)="toggleList('soft')">Soft Skills<i class='bx bx-chevrons-down'></i></h1>
-      <ul *ngIf="softListState">
-        <li>Inteligencia emocional</li>
-        <li>Colaboración</li>
-        <li>Pensamiento crítico</li>
-        <li>Escucha activa</li>
-        <li>Resiliencia</li>
-        <li>Comunicación eficaz</li>
-      </ul>
-    </div>
-    <div>
-        <h1 (click)="toggleList('tec')">Tecnologías<i class='bx bx-chevrons-down'></i></h1>
-        <ul class="two-column-list" *ngIf="tecListState">
+        <h1 (click)="toggleList('tec')">Tecnologías<i class="bx" [ngClass]="tecListState ? 'bx-chevrons-up' : 'bx-chevrons-down'"></i></h1>
+        <ul class=" contingut two-column-list" [ngClass]="{'show': tecListState}" [ngStyle]="{'max-height': tecListState ? '1000px' : '0px', 'opacity': tecListState ? 1 : 0}">
           <li><i class="bx bxl-html5"></i>HTML</li>
           <li><i class="bx bxl-css3"></i>CSS</li>
           <li><i class="bx bxl-javascript"></i>JavaScript</li>
