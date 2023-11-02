@@ -11,6 +11,9 @@
 .nav-item{
     margin: 0 10px;
 }
+.nav-item.active .nav-link {
+  color: rgb(196, 119, 235);
+}
 .nav-link{
     font-size: 20px;
     letter-spacing: 5px;
