@@ -1,10 +1,13 @@
+
+
 .container {
-  max-width: 960px;
+  max-width: 99%;
   margin: 0 auto;
   padding: 20px;
   color: white;
   margin-left: 10px;
   font-size: 25px;
+  overflow-x: hidden;
 }
 .row {
   display: flex;
@@ -95,10 +98,20 @@ i {
   opacity: 0;
   overflow: hidden;
   transition: max-height 1s, opacity 1s;
+  width: 100%;
 }
 
 .contingut.show {
-  max-height: 1000px;
+  max-height: 100%;
   opacity: 1;
 }
+a {
+  color: #fff;
+  text-decoration: none;
+  color:  rgb(108, 150, 240);
+  transition: color 0.5s ease;
+}
 
+a:hover {
+  color: darkmagenta;
+}

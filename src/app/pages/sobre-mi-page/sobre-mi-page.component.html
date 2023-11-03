@@ -1,29 +1,30 @@
 <div class="container">
-    <div class="sobre-mi-contenido">
-      <h1 >Sobre mí</h1>
-      <div>
+    <div>
+      <h1 (click)="toggleList('sobreMi')">Sobre mí<i class="bx" [ngClass]="sobreMiListState ? 'bx-chevrons-up' : 'bx-chevrons-down'"></i></h1>
+      <div class="contingut" [ngClass]="{'show': sobreMiListState}" [ngStyle]="{'max-height': sobreMiListState ? '1000px' : '0px', 'opacity': sobreMiListState ? 1 : 0}">
         <p>
-            El tiempo que no estoy programando lo invierto mayormente en los tres básicos de mi estilo de vida:
-          </p>
-          <ul>
-            <li>Crossfit</li>
-            <li>Familia</li>
-            <li>Videojuegos</li>
-          </ul>
-          <p>
-            Viajo cuando puedo, me encanta la astronomía, desconecto del mundo con mis libros de aventuras y soy el líder de una manada de dos perros a los que considero los seres más nobles y buenos del planeta.
-          </p>
-          <p>Un problema, si suena rock de fondo, es menos problema.</p>
+          El tiempo que no estoy programando lo invierto mayormente en los tres básicos de mi estilo de vida:
+        </p>
+        <ul>
+          <li>· Crossfit</li>
+          <li>· Familia</li>
+          <li>· Videojuegos</li>
+        </ul>
+        <p>
+          Viajo cuando puedo, me encanta la astronomía, desconecto del mundo con mis libros de aventuras y soy el líder de una manada de dos perros a los que considero los seres más nobles y buenos del planeta.
+        </p>
+        <p>Un problema, si suena rock de fondo, es menos problema.</p>
+      </div>
+        
       </div>
       
-    </div>
+    
     <div>
         <h1 (click)="toggleList('contacto')">Contacto<i class="bx" [ngClass]="contactoListState ? 'bx-chevrons-up' : 'bx-chevrons-down'"></i></h1>
         <div class="contingut" [ngClass]="{'show': contactoListState}" [ngStyle]="{'max-height': contactoListState ? '1000px' : '0px', 'opacity': contactoListState ? 1 : 0}">
           <p>
-            No dudes en ponerte en contacto conmigo si estás interesado en mi trabajo o si tienes alguna pregunta. Estoy siempre abierto a nuevas oportunidades.
+            No dudes en ponerte en <a [routerLink]="['/contacto']">contacto</a> conmigo si estás interesado en mi trabajo o si tienes alguna pregunta. Estoy siempre abierto a nuevas oportunidades.
           </p>
-          <button>Contactarme</button>
         </div>
       </div>
       
