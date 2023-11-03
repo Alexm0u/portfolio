@@ -23,7 +23,7 @@
         <h1 (click)="toggleList('contacto')">Contacto<i class="bx" [ngClass]="contactoListState ? 'bx-chevrons-up' : 'bx-chevrons-down'"></i></h1>
         <div class="contingut" [ngClass]="{'show': contactoListState}" [ngStyle]="{'max-height': contactoListState ? '1000px' : '0px', 'opacity': contactoListState ? 1 : 0}">
           <p>
-            No dudes en ponerte en <a [routerLink]="['/contacto']">contacto</a> conmigo si estás interesado en mi trabajo o si tienes alguna pregunta. Estoy siempre abierto a nuevas oportunidades.
+            No dudes en ponerte en <a [routerLink]="['/contacto']">contacto</a> conmigo si estás interesado en mi trabajo o si tienes alguna pregunta!
           </p>
         </div>
       </div>
@@ -52,6 +52,7 @@
           <li><i class="bx bxl-react"></i>React</li>
           <li><i class='bx bxl-redux'></i>Redux</li>
           <li><i class="bx bxl-nodejs"></i>Node</li>
+          <li><i class='bx bxl-php' ></i>php</li>
           <li><i class="bx bxl-github"></i>GitHub</li>
           <li><i class="bx bxl-bootstrap"></i>Bootstrap</li>
           <li><i class='bx bxl-postgresql'></i>PostgreSQL</li>
