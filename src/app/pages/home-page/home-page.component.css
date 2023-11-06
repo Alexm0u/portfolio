@@ -99,16 +99,18 @@ button:hover {
   display: block;
   height: auto;
   width: 100%;
-  position: relative;
+  max-width: 500px; /* Ajusta el ancho máximo según sea necesario */
+  object-fit: cover;
+  object-position: center;
   border-radius: 50%;
   border: 5px solid;
   border-image: linear-gradient(to right, darkmagenta, violet) 1;
-  
 }
 
 .cols1 {
-  width: 70%; 
+  width: 50%; 
   margin-bottom: 20px;
+  margin-right: 0%;
 }
 
 

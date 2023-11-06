@@ -51,10 +51,6 @@
     cursor: pointer;
     margin-left: 10%;
 }
-b{
-    font-size: 45px;
-    color:rgb(196, 119, 235);
-}
 .navbar-toggler-icon {
   filter: invert(1);
 }

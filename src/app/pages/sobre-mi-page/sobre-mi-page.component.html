@@ -1,63 +1,107 @@
 <div class="container">
-    <div>
-      <h1 (click)="toggleList('sobreMi')">Sobre mí<i class="bx" [ngClass]="sobreMiListState ? 'bx-chevrons-up' : 'bx-chevrons-down'"></i></h1>
-      <div class="contingut" [ngClass]="{'show': sobreMiListState}" [ngStyle]="{'max-height': sobreMiListState ? '1000px' : '0px', 'opacity': sobreMiListState ? 1 : 0}">
-        <p>
-          El tiempo que no estoy programando lo invierto mayormente en los tres básicos de mi estilo de vida:
-        </p>
-        <ul>
-          <li>· Crossfit</li>
-          <li>· Familia</li>
-          <li>· Videojuegos</li>
-        </ul>
-        <p>
-          Viajo cuando puedo, me encanta la astronomía, desconecto del mundo con mis libros de aventuras y soy el líder de una manada de dos perros a los que considero los seres más nobles y buenos del planeta.
-        </p>
-        <p>Un problema, si suena rock de fondo, es menos problema.</p>
-      </div>
-        
-      </div>
-      
-    
-    <div>
-        <h1 (click)="toggleList('contacto')">Contacto<i class="bx" [ngClass]="contactoListState ? 'bx-chevrons-up' : 'bx-chevrons-down'"></i></h1>
-        <div class="contingut" [ngClass]="{'show': contactoListState}" [ngStyle]="{'max-height': contactoListState ? '1000px' : '0px', 'opacity': contactoListState ? 1 : 0}">
-          <p>
-            No dudes en ponerte en <a [routerLink]="['/contacto']">contacto</a> conmigo si estás interesado en mi trabajo o si tienes alguna pregunta!
-          </p>
-        </div>
-      </div>
-      
-    <div>
-      <h1 (click)="toggleList('soft')">Soft Skills<i class="bx" [ngClass]="softListState ? 'bx-chevrons-up' : 'bx-chevrons-down'"></i></h1>
-      <div class="contingut" [ngClass]="{'show': softListState}" [ngStyle]="{'max-height': softListState ? '1000px' : '0px', 'opacity': softListState ? 1 : 0}">
-        <ul >
-            <li>Inteligencia emocional</li>
-            <li>Colaboración</li>
-            <li>Pensamiento crítico</li>
-            <li>Escucha activa</li>
-            <li>Resiliencia</li>
-            <li>Comunicación eficaz</li>
-          </ul>
-      </div>
-    </div>
-    <div>
-        <h1 (click)="toggleList('tec')">Tecnologías<i class="bx" [ngClass]="tecListState ? 'bx-chevrons-up' : 'bx-chevrons-down'"></i></h1>
-        <ul class=" contingut two-column-list" [ngClass]="{'show': tecListState}" [ngStyle]="{'max-height': tecListState ? '1000px' : '0px', 'opacity': tecListState ? 1 : 0}">
-          <li><i class="bx bxl-html5"></i>HTML</li>
-          <li><i class="bx bxl-css3"></i>CSS</li>
-          <li><i class="bx bxl-javascript"></i>JavaScript</li>
-          <li><i class="bx bxl-typescript"></i>TypeScript</li>
-          <li><i class="bx bxl-angular"></i>Angular</li>
-          <li><i class="bx bxl-react"></i>React</li>
-          <li><i class='bx bxl-redux'></i>Redux</li>
-          <li><i class="bx bxl-nodejs"></i>Node</li>
-          <li><i class='bx bxl-php' ></i>php</li>
-          <li><i class="bx bxl-github"></i>GitHub</li>
-          <li><i class="bx bxl-bootstrap"></i>Bootstrap</li>
-          <li><i class='bx bxl-postgresql'></i>PostgreSQL</li>
-          
-        </ul>
+  <div>
+    <h1 (click)="toggleList('sobreMi')">
+      Sobre mí<i
+        class="bx"
+        [ngClass]="sobreMiListState ? 'bx-chevrons-up' : 'bx-chevrons-down'"
+      ></i>
+    </h1>
+    <div
+      class="contingut"
+      [ngClass]="{ show: sobreMiListState }"
+      [ngStyle]="{
+        'max-height': sobreMiListState ? '1000px' : '0px',
+        opacity: sobreMiListState ? 1 : 0
+      }"
+    >
+      <p>
+        <strong>¡Hola!</strong> Soy Àlex, un entusiasta del desarrollo y el
+        mundo tech con sede en Valencia, España. A pesar de mi formación en
+        Administración y Finanzas y dedicarme profesionalmente a la logística, 
+        decidí arriesgarme y apostar por lo que siempre me ha gustado: la tecnología y, 
+        concretamente, la <strong>programación.</strong>
+      </p>
+
+      <p>
+        Cuando no estoy inmerso en <strong>código</strong>, me sumerjo en libros
+        de <strong>literatura fantástica</strong> rodeado de completo silencio.
+        Además, mi pasión por las <strong>plantas</strong> se refleja en mi
+        hogar, donde cuido de una pequeña "jungla" que me llena de alegría.
+      </p>
+
+      <p>
+        Mi vida gira en torno a mi círculo <strong>familiar</strong>, me
+        meto caña con el <strong>Crossfit</strong> para desestresarme y
+        desconecto del mundo con una buena sesión de
+        <strong>videojuegos</strong>. Ser el líder de una pequeña manada que
+        incluye a dos adorables <strong>perros</strong> y a mí mismo me llena de
+        una manera indescriptible.
+      </p>
+
+      <p>
+        Creo firmemente que con buena música de fondo
+        <strong>(Rock, por favor)</strong> se pueden transformar los problemas
+        en simples contratiempos. A menudo, al enfrentar obstáculos, suelo mirar
+        atrás para recordar mi <strong>progreso</strong> y cambiar la
+        perspectiva.
+      </p>
     </div>
   </div>
-  
+  <div>
+    <h1 (click)="toggleList('soft')">
+      Soft Skills<i
+        class="bx"
+        [ngClass]="softListState ? 'bx-chevrons-up' : 'bx-chevrons-down'"
+      ></i>
+    </h1>
+    <div
+      class="contingut"
+      [ngClass]="{ show: softListState }"
+      [ngStyle]="{
+        'max-height': softListState ? '1000px' : '0px',
+        opacity: softListState ? 1 : 0
+      }"
+    >
+      <ul>
+        <li>Pair programming</li>
+        <li>Kanban</li>
+        <li>Metodología Agile</li>
+        <li>Inteligencia emocional</li>
+        <li>Colaboración</li>
+        <li>Pensamiento crítico</li>
+        <li>Escucha activa</li>
+        <li>Resiliencia</li>
+        <li>Comunicación eficaz</li>
+      </ul>
+    </div>
+  </div>
+  <div>
+    <h1 (click)="toggleList('tec')">
+      Tecnologías<i
+        class="bx"
+        [ngClass]="tecListState ? 'bx-chevrons-up' : 'bx-chevrons-down'"
+      ></i>
+    </h1>
+    <ul
+      class="contingut two-column-list"
+      [ngClass]="{ show: tecListState }"
+      [ngStyle]="{
+        'max-height': tecListState ? '1000px' : '0px',
+        opacity: tecListState ? 1 : 0
+      }"
+    >
+      <li><i class="bx bxl-html5"></i>HTML</li>
+      <li><i class="bx bxl-css3"></i>CSS</li>
+      <li><i class="bx bxl-javascript"></i>JavaScript</li>
+      <li><i class="bx bxl-typescript"></i>TypeScript</li>
+      <li><i class="bx bxl-angular"></i>Angular</li>
+      <li><i class="bx bxl-react"></i>React</li>
+      <li><i class="bx bxl-redux"></i>Redux</li>
+      <li><i class="bx bxl-nodejs"></i>Node</li>
+      <li><i class="bx bxl-php"></i>php</li>
+      <li><i class="bx bxl-github"></i>GitHub</li>
+      <li><i class="bx bxl-bootstrap"></i>Bootstrap</li>
+      <li><i class="bx bxl-postgresql"></i>PostgreSQL</li>
+    </ul>
+  </div>
+</div>

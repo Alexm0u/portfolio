@@ -5,9 +5,9 @@
   margin: 0 auto;
   padding: 20px;
   color: white;
-  margin-left: 10px;
   font-size: 25px;
   overflow-x: hidden;
+  text-align: center; /* Agregado para centrar el contenido */
 }
 .row {
   display: flex;
@@ -25,11 +25,16 @@ h1 {
   font-size: 2em;
   margin-bottom: 20px;
   cursor: pointer;
+  text-align: left;
+  margin-left: 8.5%;
 }
 p {
   font-size: 1.1em;
   line-height: 1.6em;
   margin-bottom: 15px;
+  text-align: left;
+  margin-left: 7.5%;
+  margin-right: 10%;
 }
 
 ul {
@@ -88,17 +93,28 @@ i {
   width: 45%;
 }
 .bx.bx-chevrons-down {
+  vertical-align: middle;
+  margin-inline-start: 20px;
   float: right;
+  margin-right: 10%;
 }
+
 .bx.bx-chevrons-up {
+  vertical-align: middle;
+  margin-inline-start: 20px;
   float: right;
+  margin-right: 10%;
 }
+
+
 .contingut {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
   transition: max-height 1s, opacity 1s;
   width: 100%;
+  text-align: left;
+  margin: 20px;
 }
 
 .contingut.show {
@@ -115,3 +131,30 @@ a {
 a:hover {
   color: darkmagenta;
 }
+
+
+@media (max-width: 768px) {
+  .image-container {
+    height: 150px;
+    margin-bottom: 30px;
+    margin-left: -5px;
+  }
+  h1 {
+    text-align: left;
+    margin-left: 0; 
+    font-size: 30px;
+  }
+  .bx.bx-chevrons-down {
+    vertical-align: middle;
+    float: right;
+  }
+  
+  .bx.bx-chevrons-up {
+    vertical-align: middle;
+    margin-inline-start: 20px;
+    float: right;
+  }
+}
+
+
+
