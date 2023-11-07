@@ -45,7 +45,6 @@ ul {
 
 li {
   margin-bottom: 10px;
-  
 }
 
 button {
@@ -84,17 +83,20 @@ i {
 }
 
 .two-column-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Divide en dos columnas de igual ancho */
+  grid-gap: 20px; /* Espacio entre los elementos de la lista */
   list-style: none;
   transition: 0.3s ease;
+  
 }
 
 .two-column-list li {
   width: 45%;
   margin-bottom: 10px;
-  margin-left: 7.5%;
+  margin-left: 14%;
+  
+  
 }
 .bx.bx-chevrons-down, .bx.bx-chevrons-up {
   vertical-align: middle;
@@ -102,6 +104,7 @@ i {
   float: right;
   margin-right: 10%;
 }
+
 
 
 .contingut {
