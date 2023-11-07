@@ -62,6 +62,7 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
+    position: relative; /* Añadido para posicionar el tooltip */
   }
   .tecnologias {
     display: flex;
@@ -77,8 +78,16 @@
     font-size: 20px;
   }
   
-  .tooltip-container {
-    position: relative;
+  .flip-card-back {
+    background-color: rgba(187, 187, 187, 0.13);
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative; /* Añadido para posicionar el tooltip */
   }
   
   .tooltip-text {
@@ -90,29 +99,34 @@
     padding: 2px 5px;
     position: absolute;
     z-index: 1;
-    bottom: 100%;
-    left: 10%;
-    margin-left: -25px;
+    top: -5px; /* Ajuste para la posición del tooltip */
+    left: 50%; /* Ajuste para la posición del tooltip */
+    transform: translateX(-50%);
     opacity: 0;
     transition: opacity 0.3s, transform 0.3s; /* Añadida la transición de transformación */
-    transform: translateY(10px); /* Inicialmente, el tooltip se encuentra 10px más abajo para la animación */
     font-size: 20px; /* Ajusta el tamaño de la fuente */
+    font-weight: bold;
     white-space: nowrap; /* Evita que el tooltip se divida en varias líneas */
   }
   
-  .tooltip-container:hover .tooltip-text {
+  .flip-card-back:hover .tooltip-text {
     visibility: visible;
     opacity: 1;
-    transform: translateY(0); /* Cambia la posición vertical del tooltip al aparecer */
+    top: -30px; /* Ajuste para la posición del tooltip al mostrarlo */
   }
-  .tooltip-container a {
+
+  .repo-link {
+    text-decoration: none;
     color: inherit;
+  }
+  
+  .repo-link:hover {
     text-decoration: none;
   }
   
-  .tooltip-container a:hover {
-    text-decoration: underline;
-  }
+  
+  
+  
   
   
   
