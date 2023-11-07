@@ -8,6 +8,7 @@
   font-size: 25px;
   overflow-x: hidden;
   text-align: center; /* Agregado para centrar el contenido */
+  margin-top: 20px;
 }
 .row {
   display: flex;
@@ -23,7 +24,7 @@
 
 h1 {
   font-size: 2em;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   cursor: pointer;
   text-align: left;
   margin-left: 8.5%;
@@ -31,7 +32,7 @@ h1 {
 p {
   font-size: 1.1em;
   line-height: 1.6em;
-  margin-bottom: 15px;
+  margin-bottom: 50px;
   text-align: left;
   margin-left: 7.5%;
   margin-right: 10%;
@@ -81,11 +82,23 @@ i {
 .btn-primary {
   margin-top: 20px;
 }
+.contingut.skills ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: flex-end; 
+}
+
+.contingut.skills li {
+  margin-bottom: 10px;
+}
+
+
 
 .two-column-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* Divide en dos columnas de igual ancho */
-  grid-gap: 20px; /* Espacio entre los elementos de la lista */
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-gap: 20px; 
   list-style: none;
   transition: 0.3s ease;
   
@@ -135,27 +148,62 @@ a:hover {
 
 
 @media (max-width: 768px) {
-  .image-container {
-    height: 150px;
-    margin-bottom: 30px;
-    margin-left: -5px;
+  .container {
+    padding: 5px;
   }
+
   h1 {
+    font-size: 24px;
+    margin-left: 0;
     text-align: left;
-    margin-left: 0; 
-    font-size: 30px;
   }
-  .bx.bx-chevrons-down {
-    vertical-align: middle;
-    float: right;
+
+  p {
+    font-size: 18px; /* Ajusta el tamaño de letra para que quepa en dispositivos móviles */
+    line-height: 1.5em; /* Ajusta el espacio entre líneas para una mejor legibilidad */
+    margin-left: 0;
+    margin-right: 40px;
+    margin-bottom: 20px; /* Aumenta el margen inferior para una mejor separación entre párrafos */
+  }
+
+  ul {
+    margin-left: 0;
+  }
+
+  .two-column-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-content: center;
+  }
+
+  .two-column-list li {
+    width: 80%; /* Ajusta el ancho según sea necesario */
+    margin-left: 10%; /* Centra el contenido en el móvil */
+    font-size: 18px; /* Ajusta el tamaño de letra para que coincida con el texto */
+  }
+
+  .contingut.skills ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-content: left;
+  }
+
+  .contingut.skills li {
+     /* Centra el contenido en el móvil */
+    font-size: 14px; /* Ajusta el tamaño de letra para que coincida con el texto */
   }
   
-  .bx.bx-chevrons-up {
-    vertical-align: middle;
-    margin-inline-start: 20px;
-    float: right;
-  }
-}
 
+  .bx.bx-chevrons-down,
+  .bx.bx-chevrons-up {
+    float: right; /* Ajusta el icono a la izquierda en dispositivos móviles */
+    margin: 0;/* Espacio entre el texto y el icono */
+    font-size: 40px; 
+    vertical-align:middle;/* Ajusta el tamaño de letra para que coincida con el texto */
+  }
+
+}
 
 
