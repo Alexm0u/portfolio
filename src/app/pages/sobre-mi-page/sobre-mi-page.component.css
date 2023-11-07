@@ -40,10 +40,12 @@ p {
 ul {
   list-style-type: none;
   padding: 0;
+  margin-left: 7.5%;
 }
 
 li {
   margin-bottom: 10px;
+  
 }
 
 button {
@@ -91,15 +93,10 @@ i {
 
 .two-column-list li {
   width: 45%;
+  margin-bottom: 10px;
+  margin-left: 7.5%;
 }
-.bx.bx-chevrons-down {
-  vertical-align: middle;
-  margin-inline-start: 20px;
-  float: right;
-  margin-right: 10%;
-}
-
-.bx.bx-chevrons-up {
+.bx.bx-chevrons-down, .bx.bx-chevrons-up {
   vertical-align: middle;
   margin-inline-start: 20px;
   float: right;

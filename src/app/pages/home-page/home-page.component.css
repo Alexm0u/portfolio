@@ -53,14 +53,13 @@ p {
 }
 
 a {
-  color: #fff;
   text-decoration: none;
-  color:  rgb(108, 150, 240);
+  color: grey;
   transition: color 0.5s ease;
 }
 
 a:hover {
-  color: darkmagenta;
+  color: rgb(243, 54, 243);
 }
 
 button {
@@ -71,7 +70,7 @@ button {
   font-size: 20px; 
   font-weight: 400;
   color: #fff;
-  background-color:  rgb(108, 150, 240);
+  background-color: grey;
   border-radius: 20px;
   padding: 8px 14px;
   margin: 20px 5px; 
@@ -82,7 +81,7 @@ button {
 }
 
 button:hover {
-  background-color: darkmagenta;
+  background-color: rgb(243, 54, 243);
 }
 
 .imgbox {
