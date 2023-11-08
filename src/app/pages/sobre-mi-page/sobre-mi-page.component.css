@@ -1,5 +1,3 @@
-
-
 .container {
   max-width: 99%;
   margin: 0 auto;
@@ -7,8 +5,9 @@
   color: white;
   font-size: 25px;
   overflow-x: hidden;
-  text-align: center; /* Agregado para centrar el contenido */
+  text-align: center;
   margin-top: 20px;
+  font-family: "Poppins", sans-serif;
 }
 .row {
   display: flex;
@@ -53,13 +52,13 @@ button {
   outline: none;
   border: none;
   cursor: pointer;
-  font-size: 20px; 
+  font-size: 20px;
   font-weight: 400;
   color: #fff;
-  background-color:  rgb(108, 150, 240);
+  background-color: rgb(108, 150, 240);
   border-radius: 20px;
   padding: 8px 14px;
-  margin: 20px 5px; 
+  margin: 20px 5px;
   letter-spacing: 2px;
   text-transform: capitalize;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
@@ -86,22 +85,19 @@ i {
   list-style-type: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-content: flex-end; 
+  justify-content: flex-end;
 }
 
 .contingut.skills li {
   margin-bottom: 10px;
 }
 
-
-
 .two-column-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; 
-  grid-gap: 20px; 
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
   list-style: none;
   transition: 0.3s ease;
-  
 }
 
 .two-column-list li {
@@ -109,17 +105,14 @@ i {
   margin-bottom: 10px;
   margin-left: 22%;
   margin-top: 10px;
-  
-  
 }
-.bx.bx-chevrons-down, .bx.bx-chevrons-up {
+.bx.bx-chevrons-down,
+.bx.bx-chevrons-up {
   vertical-align: middle;
   margin-inline-start: 20px;
   float: right;
   margin-right: 10%;
 }
-
-
 
 .contingut {
   max-height: 0;
@@ -138,14 +131,13 @@ i {
 a {
   color: #fff;
   text-decoration: none;
-  color:  rgb(108, 150, 240);
+  color: rgb(108, 150, 240);
   transition: color 0.5s ease;
 }
 
 a:hover {
   color: darkmagenta;
 }
-
 
 @media (max-width: 768px) {
   .container {
@@ -159,11 +151,11 @@ a:hover {
   }
 
   p {
-    font-size: 18px; /* Ajusta el tamaño de letra para que quepa en dispositivos móviles */
-    line-height: 1.5em; /* Ajusta el espacio entre líneas para una mejor legibilidad */
+    font-size: 18px;
+    line-height: 1.5em;
     margin-left: 0;
     margin-right: 40px;
-    margin-bottom: 20px; /* Aumenta el margen inferior para una mejor separación entre párrafos */
+    margin-bottom: 20px;
   }
 
   ul {
@@ -178,9 +170,9 @@ a:hover {
   }
 
   .two-column-list li {
-    width: 80%; /* Ajusta el ancho según sea necesario */
-    margin-left: 10%; /* Centra el contenido en el móvil */
-    font-size: 18px; /* Ajusta el tamaño de letra para que coincida con el texto */
+    width: 80%;
+    margin-left: 5%;
+    font-size: 18px;
   }
 
   .contingut.skills ul {
@@ -191,19 +183,15 @@ a:hover {
   }
 
   .contingut.skills li {
-     /* Centra el contenido en el móvil */
-    font-size: 14px; /* Ajusta el tamaño de letra para que coincida con el texto */
+    
+    font-size: 14px; 
   }
-  
 
   .bx.bx-chevrons-down,
   .bx.bx-chevrons-up {
-    float: right; /* Ajusta el icono a la izquierda en dispositivos móviles */
-    margin: 0;/* Espacio entre el texto y el icono */
-    font-size: 40px; 
-    vertical-align:middle;/* Ajusta el tamaño de letra para que coincida con el texto */
+    float: right; 
+    margin: 0; 
+    font-size: 40px;
+    vertical-align: middle; 
   }
-
 }
-
-
